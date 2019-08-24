@@ -35,8 +35,20 @@ public class JdbcUtil {
 		}
 		return st;
 	}
+	
+	public static int getRecordCount(ResultSet rs) {
+		int count = 0;
+		try {
+			rs.absolute(-1);
+			count = rs.getRow();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return count;
+	}
 
 	public static void closeResource(Connection conn, Statement st, ResultSet rs) {
+		System.out.println("----------------------------开始关闭JDBC资源----------------------------");
 		if (rs != null) {
 			try {
 				rs.close();
@@ -61,5 +73,6 @@ public class JdbcUtil {
 				e.printStackTrace();
 			}
 		}
+		System.out.println("----------------------------关闭JDBC完毕--------------------------------");
 	}
 }
