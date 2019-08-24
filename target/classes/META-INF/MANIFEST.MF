@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Built-By: yinchu
+Class-Path: lib/mysql-connector-java-8.0.17.jar lib/protobuf-java-3.6.
+ 1.jar
+Build-Jdk: 1.8.0_181
+Created-By: Maven Integration for Eclipse
+
