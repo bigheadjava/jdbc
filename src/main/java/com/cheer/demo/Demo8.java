@@ -29,7 +29,7 @@ public class Demo8 {
 			// 将游标滚动到插入行
 			rs.last();
 			// 修改记录数据
-			rs.updateString(1, "S002");
+			rs.updateString(1, "S008");
 			rs.updateString("stu_name", "新李四");
 			// 将缓冲区中的数据刷新到数据库
 			rs.updateRow();

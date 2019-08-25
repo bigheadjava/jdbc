@@ -32,8 +32,8 @@ public class Demo7 {
 			//将游标滚动到插入行
 			rs.moveToInsertRow();
 			//向缓冲区中写入一条数据
-			rs.updateString(1, "S002");
-			rs.updateString("stu_name", "李四");
+			rs.updateString(1, "S003");
+			rs.updateString("stu_name", "李四3");
 			//将缓冲区中的数据刷新到数据库
 			rs.insertRow();
 			

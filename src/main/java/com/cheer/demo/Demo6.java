@@ -37,11 +37,11 @@ public class Demo6 {
 			// 游标滚动到第五条记录
 			rs.absolute(5);
 			printResult(rs);
-			
+		
 			//游标滚动到第8行
 			rs.relative(3);
 			printResult(rs);
-			
+					
 			//游标滚动到第四行记录
 			rs.relative(-4);
 			printResult(rs);
