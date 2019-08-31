@@ -18,7 +18,7 @@ public class RsPagination implements IRsPagination {
 		if (rs == null) {
 			throw new SQLException("当前查询没有查到记录!");
 		}
-		if(pageSize < 0) {
+		if (pageSize < 0) {
 			throw new SQLException("pageSize必须大于等于0!");
 		}
 		rs.last();
@@ -53,7 +53,7 @@ public class RsPagination implements IRsPagination {
 		if (currentPage != getPageCount()) {
 			return pageSize;
 		}
-		return recordCount - (getPageCount() - 1) * pageSize; //最后一页记录数
+		return recordCount - (getPageCount() - 1) * pageSize; // 最后一页记录数
 	}
 
 	public void gotoPage(int page) {
@@ -113,7 +113,7 @@ public class RsPagination implements IRsPagination {
 			row = currentPage * pageSize;
 		}
 		rs.absolute(row);
-		currentPage ++;
+		currentPage++;
 	}
 
 }

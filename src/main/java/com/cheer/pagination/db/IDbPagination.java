@@ -1,8 +1,8 @@
-package com.cheer.pagination.rs;
+package com.cheer.pagination.db;
 
 import java.sql.SQLException;
 
-public interface IRsPagination {
+public interface IDbPagination {
 
 	// 返回总页数
 	int getPageCount();
@@ -34,4 +34,6 @@ public interface IRsPagination {
 	// 返回当前页号
 	int getCurrentPage();
 	
+	//返回查询开始位置
+	int getStartPos();
 }

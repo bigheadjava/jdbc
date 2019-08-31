@@ -46,7 +46,7 @@ public class JdbcUtil {
 		}
 		return count;
 	}
-
+	
 	public static void closeResource(Connection conn, Statement st, ResultSet rs) {
 		System.out.println("----------------------------开始关闭JDBC资源----------------------------");
 		if (rs != null) {
